@@ -1,0 +1,41 @@
+
+#nullable enable
+
+namespace LeonardoNS.Client
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class PromptImproveResponse
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("promptGeneration")]
+        public global::LeonardoNS.Client.PromptImproveResponsePromptGeneration? PromptGeneration { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PromptImproveResponse" /> class.
+        /// </summary>
+        /// <param name="promptGeneration"></param>
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+        public PromptImproveResponse(
+            global::LeonardoNS.Client.PromptImproveResponsePromptGeneration? promptGeneration)
+        {
+            this.PromptGeneration = promptGeneration;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PromptImproveResponse" /> class.
+        /// </summary>
+        public PromptImproveResponse()
+        {
+        }
+    }
+}
