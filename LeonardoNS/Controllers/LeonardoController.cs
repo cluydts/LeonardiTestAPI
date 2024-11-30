@@ -18,7 +18,8 @@ namespace LeonardoNS.Controllers
         [HttpGet("call")]
         public async Task<IActionResult> CallAPI()
         {
-            
+            var result = _client.Texture;
         }
+
     }
 }
